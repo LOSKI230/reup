@@ -67,9 +67,7 @@ jobs:
 #          MY_ENV_VAR: value-for-my-env-var
 #          MY_SECRET_ENV_VAR: ${{ secrets.MY_SECRET }} # here you can find information how to create secrets: https://docs.github.com/en/actions/security-guides/encrypted-secrets
         run: |
-          php composer.phar update
-          php bin/console doctrine:migrations:migrate
-          php composer.phar require symfony/apache-pack
+        
           npm install
           npm run dev
 
