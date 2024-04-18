@@ -50,7 +50,7 @@ jobs:
           SITE_URL: ${{ inputs.site-url }}
         run: |
           npm ci
-          npm run build
+          
 
       - name: Setup composer
         uses: php-actions/composer@v6
